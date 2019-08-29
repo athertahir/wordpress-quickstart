@@ -490,6 +490,7 @@
                 "accessModes": [
                     "ReadWriteOnce"
                 ],
+		"volumeName": "volume1",
                 "resources": {
                     "requests": {
                         "storage": "${DATABASE_VOLUME_SIZE}"
@@ -507,6 +508,7 @@
                 }
             },
             "spec": {
+		"volumeName": "volume2",    
                 "accessModes": [
                     "${WORDPRESS_VOLUME_TYPE}"
                 ],
